@@ -1,0 +1,11 @@
+node_modules/
+.svelte-kit/
+build/
+test-results/
+playwright-report/
+coverage/
+data/raw/
+static/duckdb-ext/
+*.log
+.DS_Store
+Thumbs.db

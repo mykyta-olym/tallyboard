@@ -1,0 +1,108 @@
+{
+	"source": {
+		"name": "USGS ANSS Comprehensive Earthquake Catalog (ComCat), FDSN event web service",
+		"endpoint": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+		"retrieved": "2026-11-04"
+	},
+	"slice": {
+		"years": [
+			1990,
+			2025
+		],
+		"min_magnitude": 4.5,
+		"event_type": "earthquake",
+		"networks": [
+			"us",
+			"official"
+		]
+	},
+	"counts": {
+		"raw_rows": 224703,
+		"kept_rows": 222328,
+		"excluded_by_network": [
+			{
+				"net": "ak",
+				"rows": 1139
+			},
+			{
+				"net": "ci",
+				"rows": 342
+			},
+			{
+				"net": "iscgem",
+				"rows": 218
+			},
+			{
+				"net": "nc",
+				"rows": 212
+			},
+			{
+				"net": "gcmt",
+				"rows": 130
+			},
+			{
+				"net": "pr",
+				"rows": 103
+			},
+			{
+				"net": "hv",
+				"rows": 102
+			},
+			{
+				"net": "nn",
+				"rows": 55
+			},
+			{
+				"net": "uw",
+				"rows": 24
+			},
+			{
+				"net": "tx",
+				"rows": 22
+			},
+			{
+				"net": "uu",
+				"rows": 10
+			},
+			{
+				"net": "nm",
+				"rows": 6
+			},
+			{
+				"net": "se",
+				"rows": 5
+			},
+			{
+				"net": "ld",
+				"rows": 4
+			},
+			{
+				"net": "ok",
+				"rows": 2
+			},
+			{
+				"net": "aacse",
+				"rows": 1
+			}
+		],
+		"below_minimum_magnitude": 0
+	},
+	"ranges": {
+		"first_event_utc": "1990-01-01 07:49:35.57",
+		"last_event_utc": "2025-12-31 23:04:28.213",
+		"magnitude": [
+			4.5,
+			9.1
+		],
+		"depth_km": [
+			0,
+			700.9
+		],
+		"distinct_regions": 505
+	},
+	"parquet": {
+		"path": "static/data/quakes.parquet",
+		"bytes": 4000546,
+		"sha256": "450c0ca28060c1b6d060edad04c2cba870068f01866b33922886edd15c224d6e"
+	}
+}

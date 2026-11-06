@@ -1,0 +1,40 @@
+{
+	"name": "tallyboard",
+	"version": "0.1.0",
+	"private": true,
+	"description": "An earthquake analytics dashboard that runs SQL in the browser with DuckDB-WASM. No backend.",
+	"type": "module",
+	"license": "MIT",
+	"author": "Mykyta Olym",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mykyta-olym/tallyboard.git"
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"packageManager": "pnpm@12.16.1",
+	"dependencies": {
+		"@duckdb/duckdb-wasm": "1.33.1-dev57.0",
+		"apache-arrow": "^17.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.6.4",
+		"@duckdb/node-api": "2.0.0-r.1",
+		"@playwright/test": "^1.64.1",
+		"@sveltejs/adapter-static": "^4.0.1",
+		"@sveltejs/kit": "^3.1.1",
+		"@sveltejs/vite-plugin-svelte": "^7.3.1",
+		"@types/geojson": "^7946.0.16",
+		"@types/node": "^26.6.6",
+		"@types/topojson-client": "^3.1.5",
+		"@types/topojson-specification": "^1.0.5",
+		"svelte": "^5.57.3",
+		"svelte-check": "^4.7.8",
+		"topojson-client": "^3.1.0",
+		"typescript": "^6.0.3",
+		"vite": "^8.3.5",
+		"vitest": "^5.1.0",
+		"world-atlas": "^2.0.2"
+	}
+}
